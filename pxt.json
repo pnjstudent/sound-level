@@ -4,7 +4,8 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "extras": "github:pnjstudent/extras#237297ed6563894c98553f2bdbc5e96de8481d1a"
     },
     "files": [
         "main.blocks",

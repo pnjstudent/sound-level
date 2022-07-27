@@ -1,1 +1,37 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="/oHsZKTn~E/4TdnXSsU(" x="0" y="0"><statement name="HANDLER"><block type="input_set_sound_threshold" id="gf6eJjAcjtRd@DbF+`@]"><field name="sound">SoundThreshold.Loud</field><value name="value"><shadow type="math_number_minmax" id="%C;!}7C`W::HBefc}%Rf"><mutation min="0" max="255" label="Threshold" precision="0"></mutation><field name="SLIDER">112</field></shadow></value></block></statement></block><block type="device_forever" id="E#GCv*[uV:Zr2_|mO0?H" x="472" y="-7"><statement name="HANDLER"><block type="device_set_brightness" id="wTi[[q5bg{j|FCS1[SxD"><value name="value"><shadow type="math_number_minmax"><mutation min="0" max="255" label="Value" precision="0"></mutation><field name="SLIDER">255</field></shadow><block type="device_get_sound_level" id="TmrOciu3oPj#CYPHwh;3"></block></value></block></statement></block><block type="input_on_sound" id="{YqawfkpmV-M1N2u`TK6" x="533" y="236"><field name="sound">DetectedSound.Loud</field><statement name="HANDLER"><block type="basic_show_icon" id="UZ/4!XA?#KUb4I5WxljD"><field name="i">IconNames.Diamond</field></block></statement></block><block type="input_on_sound" id="{[j8|G8u)dexsP6aV+,-" x="238" y="279"><field name="sound">DetectedSound.Quiet</field><statement name="HANDLER"><block type="basic_show_icon" id="3d+$UxCddELR_[d2v3P1"><field name="i">IconNames.SmallDiamond</field></block></statement></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="/oHsZKTn~E/4TdnXSsU(" x="0" y="0"><statement name="HANDLER"><block type="input_set_sound_threshold" id="gf6eJjAcjtRd@DbF+`@]"><field name="sound">SoundThreshold.Loud</field><value name="value"><shadow type="math_number_minmax" id="%C;!}7C`W::HBefc}%Rf"><mutation min="0" max="255" label="Threshold" precision="0"></mutation><field name="SLIDER">200</field></shadow></value></block></statement></block><block type="device_forever" id="E#GCv*[uV:Zr2_|mO0?H" x="263" y="155"><statement name="HANDLER"><block type="device_set_brightness" id="UL*r-!/I,*xqX[o%Lrav"><value name="value"><shadow type="math_number_minmax" id="3!MW`,p=lHYo:cS.2dKs"><mutation min="0" max="255" label="Value" precision="0"></mutation><field name="SLIDER">255</field></shadow><block type="device_get_sound_level" id="o,+j@kd@jo?nRm~t9Z_M"></block></value><next><block type="sound_mapImagesToVolume" id="-vz:v6^9gf-^0UW{OXkc"><value name="imgs"><block type="lists_create_with" id="]!{f08+I7uU|^hSXmbd1" inline="false"><mutation items="6" horizontalafter="3"></mutation><value name="ADD0"><block type="device_build_image" id="vxULcW5n]mzr2E?SEB}q"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field></block></value><value name="ADD1"><block type="device_build_image" id="Lp7{q[diR^A4~6`5Z~R^"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        # . # . #
+        `</field></block></value><value name="ADD2"><block type="device_build_image" id="rY5|,%2)VOFHx~G}C_3G"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . # . # . 
+        # . # . #
+        `</field></block></value><value name="ADD3"><block type="device_build_image" id="m3^_B4`OYXv%ccn[L4tJ"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        # . # . # 
+        . # . # . 
+        # . # . #
+        `</field></block></value><value name="ADD4"><block type="device_build_image" id="b9y.u.`ER_,^^0RUq,B!"><field name="LEDS">`
+        . . . . . 
+        . # . # . 
+        # . # . # 
+        . # . # . 
+        # . # . #
+        `</field></block></value><value name="ADD5"><block type="device_build_image" id="K1/,bee#$-N7?)l|rk)V"><field name="LEDS">`
+        # . # . # 
+        . # . # . 
+        # . # . # 
+        . # . # . 
+        # . # . #
+        `</field></block></value></block></value></block></next></block></statement></block><block type="input_logo_event" id="ga)e[uxM3|DWOueJ`pOZ" x="796" y="343"><field name="action">TouchButtonEvent.Pressed</field><statement name="HANDLER"><block type="sound_resetMaxVol" id="8k%HxC,%jM`q_c[:Wl~("></block></statement></block></xml>

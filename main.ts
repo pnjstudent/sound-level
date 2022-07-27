@@ -1,10 +1,51 @@
-input.onSound(DetectedSound.Loud, function () {
-    basic.showIcon(IconNames.Diamond)
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    sound.resetMaxVol()
 })
-input.onSound(DetectedSound.Quiet, function () {
-    basic.showIcon(IconNames.SmallDiamond)
-})
-input.setSoundThreshold(SoundThreshold.Loud, 112)
+input.setSoundThreshold(SoundThreshold.Loud, 200)
 basic.forever(function () {
     led.setBrightness(input.soundLevel())
+    sound.mapImagesToVolume([
+    images.createImage(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `),
+    images.createImage(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        # . # . #
+        `),
+    images.createImage(`
+        . . . . .
+        . . . . .
+        . . . . .
+        . # . # .
+        # . # . #
+        `),
+    images.createImage(`
+        . . . . .
+        . . . . .
+        # . # . #
+        . # . # .
+        # . # . #
+        `),
+    images.createImage(`
+        . . . . .
+        . # . # .
+        # . # . #
+        . # . # .
+        # . # . #
+        `),
+    images.createImage(`
+        # . # . #
+        . # . # .
+        # . # . #
+        . # . # .
+        # . # . #
+        `)
+    ])
 })
